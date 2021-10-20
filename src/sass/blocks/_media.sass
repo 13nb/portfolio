@@ -1,0 +1,211 @@
+@media (max-width: 1439px)
+    .container
+        max-width: 1100px
+    .sidepanel
+        display: none
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .about
+        &__wrapper
+            grid-template-columns: 400px 500px
+            column-gap: 30px
+        &__skills
+            column-gap: 20px
+            grid-template: repeat(2,minmax(115px,auto)) / repeat(2,250px)
+            &-item
+                column-gap: 15px
+                grid-template-columns: 40px 180px
+    .resume
+        padding-top: 90px
+        &__wrapper
+            padding: 50px 50px 0 50px
+            grid-template-columns: repeat(2, minmax(360px, auto))
+            column-gap: 95px
+    .work
+        padding-top: 90px
+        &__wrapper
+            padding: 60px 10px 0 10px
+            grid-template: repeat(2, minmax(270px, auto)) / repeat(3, 270px)
+            justify-content: center
+    .portfolio
+        padding-top: 90px
+        &__wrapper
+            grid-template: repeat(2, 280px) / repeat(3, 280px)
+            justify-content: center
+        &__item
+            img
+                width: 100%
+                height: 100%
+            &.vertical
+                grid-row: unset
+                grid-column: unset
+            &.horizonal
+                grid-row: unset
+                grid-column: unset 
+    .contacts
+        padding: 100px 0 70px 0
+        &__wrapper
+            padding: 10px
+            grid-template-columns: 400px 530px
+        &__form
+            grid-template: 45px 190px 45px / repeat(2, 250px)
+
+@media (max-width: 992px) 
+    .container
+        max-width: 720px
+    .about
+        &__wrapper
+            grid-template-columns: 300px 380px
+        &__skills
+            grid-template-columns: 380px
+            grid-auto-rows: minmax(115px, auto)
+            &-item
+                column-gap: 20px
+                grid-template-columns: 40px 320px
+    .resume
+        padding-top: 50px
+        &__wrapper
+            padding: 30px 10px 0 10px
+            grid-template-columns: repeat(2,minmax(240px,auto))
+            column-gap: 50px
+    .work
+        padding-top: 70px
+        &__wrapper
+            padding: 30px 10px 0 10px
+            grid-template: repeat(2, minmax(270px, auto)) / repeat(2, 270px)
+            justify-content: space-evenly
+        &__item
+            padding: 25px     
+    .portfolio
+        padding-top: 70px
+        &__wrapper
+            margin-top: 40px
+            grid-template: repeat(2, 280px) / repeat(2, 280px)  
+    .contacts
+        padding: 70px 0 50px 0
+        &__wrapper
+            grid-template-columns: 250px 430px
+            justify-content: space-between
+        &__form
+            grid-template: 45px 190px 45px / repeat(2, 210px)
+        &__btn
+            font-size: 11px
+        &__privacy
+            font-size: 11px
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &_fs36    
+            font-size: 26px
+    .promo
+        &__title
+            width: 355px
+            line-height: 39px
+    .about
+        padding-top: 40px
+        &__wrapper
+            grid-template: 400px auto auto / 1fr
+        &__photo
+            grid-row: unset
+        &__skills
+            grid-template-columns: repeat(2, 260px)
+            &-item
+                grid-template-columns: 40px 200px
+                column-gap: 20px
+    .resume
+        padding-top: 30px
+        .divider
+            margin: 5px auto 0 auto
+        &__wrapper
+            padding: 10px 10px 0 10px
+            column-gap: 30px  
+    .work
+        padding-top: 50px
+        &__wrapper
+            padding: 15px 10px 0 10px
+    .portfolio
+        padding-top: 50px
+        &__wrapper
+            margin-top: 30px
+            grid-template: repeat(3, 280px) / repeat(2, 280px)
+            gap: 0
+    .contacts
+        padding: 50px 0 30px 0
+        &__wrapper
+            grid-template-columns: 510px
+        &__form
+            grid-template: 45px 170px 45px / repeat(2, 245px)
+        &__photo
+            img
+            display: none
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .hamburger
+        right: 20px
+    .menu
+        &__block
+            width: 250px
+            padding-left: 20px
+    .promo
+        &__title
+            width: 300px
+            line-height: 25px
+        &__btns
+            margin-top: 30px
+    .about
+        &__wrapper
+            grid-template: 340px auto auto / 100%
+        &__skills
+            grid-template-columns: 100%
+    .resume
+        &__wrapper
+            grid-template-columns: minmax(300px, auto)
+        &__item
+            &-head
+                padding: 15px 0 0 100px
+            &-icon
+                top: 19px
+            &:before
+                top: 35px
+    .work
+        padding-top: 30px
+        &__wrapper
+            grid-template: repeat(6, minmax(270px, auto)) / repeat(1, 270px)
+    .portfolio
+        padding-top: 30px
+        &__wrapper
+            grid-template: repeat(6, 280px) / 280px
+            gap: 5
+    .contacts
+        padding: 30px 0 15px 0
+        &__wrapper
+            grid-template: 280px
+        &__descr
+            width: 300px
+        &__form
+            grid-template: 45px 45px 143px / 285px
+        &__text
+            width: 300px
+        &__textarea
+            grid-column: unset
+        &__triggers
+            grid-template-columns: 300px
+            grid-column: unset
+            row-gap: 15px
+            justify-items: center
+        &__btn.btn
+            padding: 0
+            width: 150px
+            height: 50px
+           
+
+
+
+
