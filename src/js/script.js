@@ -29,3 +29,14 @@ link.forEach(li => {
         return false;
     });
 
+    $("a[href^='#']").click(function(){
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        li.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+        return false;
+    });
+
+
+
